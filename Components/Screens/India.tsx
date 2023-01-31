@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet,Image, TouchableOpacity,ToastAndroid } from 'react-native'
+import { View, Text,StyleSheet,Image, TouchableOpacity } from 'react-native'
 // import {StatusBar} from 
 
 import { StatusBar } from 'expo-status-bar';
@@ -11,11 +11,7 @@ export default function India({navigation}) {
     const [fetched, setFetched] = useState(false)
     useEffect(() => {
         handledemp()
-        ToastAndroid.showWithGravity(
-            'Fetch Successfull',
-            ToastAndroid.SHORT,
-            ToastAndroid.CENTER,
-          );
+        
 
     }, [])
 
@@ -83,11 +79,7 @@ export default function India({navigation}) {
       <TouchableOpacity onPress={()=>{
         
           handledemp()
-          ToastAndroid.showWithGravity(
-            'Refreshed Successfully',
-            ToastAndroid.SHORT,
-            ToastAndroid.CENTER,
-            );
+         
         }} >
       <Image style={styles.icon} source={require('./Icons/refresh.png')}/>
 
