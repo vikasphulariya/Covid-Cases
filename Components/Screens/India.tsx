@@ -75,7 +75,7 @@ export default function India({navigation}) {
     <StatusBar style="dark" />
 <View style={styles.header}>
 
-      <Text style={{fontSize:25,fontWeight:'900',marginVertical:10,textAlign:'left'}}>India Covid-19 States</Text>
+      <Text style={{fontSize:25,fontWeight:'900',marginVertical:10,textAlign:'left'}}>India Covid-19 Stats</Text>
       <TouchableOpacity onPress={()=>{
         
           handledemp()
